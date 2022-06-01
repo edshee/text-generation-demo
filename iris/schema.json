@@ -1,0 +1,42 @@
+{
+    "requests": [
+      {
+        "name": "Sepal Length",
+        "type": "REAL",
+        "data_type": "FLOAT"
+      },
+      {
+        "name": "Sepal Width",
+        "type": "REAL",
+        "data_type": "FLOAT"
+      },
+      {
+        "name": "Petal Length",
+        "type": "REAL",
+        "data_type": "FLOAT"
+      },
+      {
+        "name": "Petal Width",
+        "type": "REAL",
+        "data_type": "FLOAT"
+      }
+    ],
+    "responses": [
+      {
+        "name": "Type",
+        "type": "PROBA",
+        "data_type": "FLOAT",
+        "schema": [
+          {
+            "name": "setosa"
+          },
+          {
+            "name": "versicolor"
+          },
+          {
+            "name": "virginica"
+          }
+        ]
+      }
+    ]
+  }

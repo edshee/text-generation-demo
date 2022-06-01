@@ -1,0 +1,16 @@
+apiVersion: machinelearning.seldon.io/v1alpha2
+kind: SeldonDeployment
+metadata:
+  name: gpt2
+spec:
+  predictors:
+  - graph:
+      implementation: TRITON_SERVER
+      logger:
+        mode: all
+      modelUri: gs://es-model-bucket
+      name: gpt2
+      type: MODEL
+    name: default
+    replicas: 1
+  protocol: kfserving
